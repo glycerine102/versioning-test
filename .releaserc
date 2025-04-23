@@ -16,10 +16,21 @@
       "@semantic-release/git",
       {
         "assets": [
+          "package.json",
           "CHANGELOG.md"
         ]
       }
     ],
-    "@semantic-release/github"
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "dist.zip",
+            "label": "Distribution"
+          }
+        ]
+      }
+    ]
   ]
 }
